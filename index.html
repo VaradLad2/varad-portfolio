@@ -194,6 +194,11 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
 .toast { color: var(--amber); min-height: 18px; margin-top: 12px; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cue b, .chapter .title.swap, svg .flow, svg .pulse, svg .scanx, svg .scany, svg .slide { animation: none; } .thumb { transition: border-color 0.3s; } }
+.mlgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.mlc{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px;background:rgba(255,255,255,.03)}
+.mlc h3{font-size:18px;margin:0 0 10px}.mlc p{margin:0;opacity:.72;line-height:1.55;font-size:15px}
+@media (max-width:900px){.mlgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.mlgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -217,7 +222,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
         <div class="intro" id="intro">
           <div class="eyebrow mono">Generative AI &amp; Agentic AI Engineer</div>
           <h1>Varad Lad</h1>
-          <p>LLMs, retrieval and agentic workflows for engineering and enterprise software. Pune, India.</p>
+          <p>LLMs, retrieval and agentic workflows for engineering and enterprise software. Based in Pune, open to relocating.</p>
         </div>
         <div class="chapter" id="chapter">
           <div class="row mono"><span class="no" id="chNo">Frame 01 / 09</span><span class="mag" id="chMag">Magnification x1</span></div>
@@ -241,7 +246,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
       <div class="text">
         <p>I am an AI engineer in Pune. I finished my B.Tech in AI and Machine Learning at Symbiosis Institute of Technology, and I now work at PLM Nordic as an AI Implementation Engineer, a full-time role that grew out of my internship there.</p>
         <p>Before that I spent a year at CGB Solutions building an agentic CRM, retrieval systems for resumes and procurement documents, and a vendor scoring engine. My first role was as a business analyst intern at Rich Products, which taught me how a large manufacturer runs day to day.</p>
-        <p>Outside work I build my own models for fun: GANs, an NLP chatbot for farmers, plant disease detection. I am always happy to talk to people working on AI, agentic systems or anything near them.</p>
+        <p>LLMs are only one part of what I do. I build and train models from scratch, across deep learning, supervised and unsupervised learning and classical machine learning, and I design the algorithms around them. Outside work that means GANs, an NLP chatbot for farmers and plant disease detection. I am open to relocating, and always happy to talk to people working on AI, agentic systems or anything near them.</p>
       </div>
     </div>
     <div class="stats">
@@ -249,6 +254,22 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
       <div class="stat"><b>88%</b><span>match from scanned drawing to DXF against a manually checked key</span></div>
       <div class="stat"><b>4</b><span>roles across PLM Nordic, CGB Solutions and Rich Products</span></div>
       <div class="stat"><b>60</b><span>teams in the Elephant Tank 2025 pitching round, chosen from 400+</span></div>
+    </div>
+  </section>
+
+  <section class="block wrap" id="ml" aria-label="Machine learning">
+    <div class="head">
+      <div>
+        <span class="eyebrow mono">Beyond the prompt</span>
+        <h2>Real ML</h2>
+      </div>
+      <p>I can design the algorithm, train the model and evaluate it, not only call an API. Language models are one tool among several.</p>
+    </div>
+    <div class="mlgrid">
+      <div class="mlc"><h3>Deep learning</h3><p>CNNs, LSTMs and GANs built and trained in PyTorch and TensorFlow, including a Pix2Pix-style restoration GAN, a DCGAN and a multimodal leaf-health model.</p></div>
+      <div class="mlc"><h3>Supervised learning</h3><p>Classification and regression with proper features, validation and error analysis, such as the e-commerce purchase prediction model and the ticket routing classifier.</p></div>
+      <div class="mlc"><h3>Unsupervised learning</h3><p>Clustering, embeddings and similarity search to find structure in data that has no labels.</p></div>
+      <div class="mlc"><h3>Classical ML and algorithms</h3><p>Feature engineering, ensembles, TF-IDF and fuzzy matching, plus computer vision pipelines with OpenCV where a trained model is not the right answer.</p></div>
     </div>
   </section>
 
@@ -438,7 +459,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
       </div>
     </div>
     <div class="stack" aria-label="Tools">
-      <span>Python</span><span>FastAPI</span><span>LangChain</span><span>LangGraph</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>RAG</span><span>Redis</span><span>Supabase</span><span>Next.js</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>OCR / OpenCV</span><span>Ollama</span><span>PyTorch</span><span>TensorFlow</span><span>Streamlit</span><span>Docker</span><span>Teamcenter ITK</span>
+      <span>Python</span><span>FastAPI</span><span>LangChain</span><span>LangGraph</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>RAG</span><span>Redis</span><span>Supabase</span><span>Next.js</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>Scikit-learn</span><span>Deep learning</span><span>Supervised and unsupervised ML</span><span>OCR / OpenCV</span><span>Ollama</span><span>PyTorch</span><span>TensorFlow</span><span>Streamlit</span><span>Docker</span><span>Teamcenter ITK</span>
     </div>
   </section>
 
@@ -458,7 +479,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
         <dt class="mono">Phone</dt><dd>+91 77578 33316</dd>
         <dt class="mono">LinkedIn</dt><dd><a href="https://www.linkedin.com/in/varadrlad/">linkedin.com/in/varadrlad</a></dd>
         <dt class="mono">GitHub</dt><dd><a href="https://github.com/VaradLad2">github.com/VaradLad2</a></dd>
-        <dt class="mono">Base</dt><dd>Pune, India</dd>
+        <dt class="mono">Base</dt><dd>Pune, India. Open to relocating.</dd>
       </dl>
     </div>
     <footer class="mono">
